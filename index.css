@@ -70,7 +70,7 @@ select:focus-visible {
 }
 
 .founders-aside img {
-    width: 120px;
+    width: 400px; /* maior no desktop para equilíbrio visual */
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--color-shadow);
@@ -78,7 +78,7 @@ select:focus-visible {
 
 @media (max-width: 768px) {
     .founders-aside img {
-        width: 100px;
+        width: 140px; /* reduz em telas pequenas para manter proporção */
         height: auto;
     }
 }
