@@ -1,45 +1,107 @@
-# FIPMDF
-Repositório do projeto **FIP-MDF**: solução integrada de filtragem, neutralização e reaproveitamento de subprodutos (pó de madeira, formaldeído, fenóis) na produção de MDF/MDP. O objetivo é reduzir emissões, proteger a saúde ocupacional e transformar resíduos em insumos econômicos.
 # FIP-MDF — Site Institucional
 
-Este repositório apresenta o site institucional da FIP-MDF. O objetivo é comunicar quem somos, nossas soluções e como nos conectar. Não se trata de um projeto aberto a contribuições externas.
+Este repositório apresenta o site institucional da **FIP-MDF**, uma empresa de tecnologia sustentável especializada em soluções integradas de filtragem, neutralização e reaproveitamento de subprodutos na produção de MDF/MDP. O objetivo é comunicar quem somos, nossas soluções e como nos conectar.
 
-## Sobre a FIP-MDF
-A FIP-MDF oferece soluções de engenharia para controle de emissões e tratamento de gases, com foco em eficiência operacional, segurança e responsabilidade ambiental.
+## 🌟 Sobre a FIP-MDF
 
-## O que entregamos
-- Projetos e fabricação de equipamentos para tratamento e filtragem de particulados e gases.
-- Suporte técnico e consultoria aplicada a processos industriais.
-- Compromisso com sustentabilidade e conformidade regulatória.
+A FIP-MDF nasceu da união de cinco visionários — Alice, Jéssica, Maria Eduarda, Gabriel e Hiury — com a missão de inovar no setor de engenharia e sustentabilidade industrial. Transformamos resíduos e poluentes gerados na produção (pó de madeira, formaldeído e compostos fenólicos) em insumos reutilizáveis e de alto valor econômico, reduzindo emissões e protegendo a saúde ocupacional.
 
-## Produtos e Tecnologias
-- Filtro Ciclônico FIP-MDF
-- Lavador de Gases Modular
-- Filtro de Carvão Ativado Industrial
+## 🚀 O que entregamos
 
-## Galeria de Projetos
-Imagens de renderização e seções técnicas dos principais equipamentos, destacando qualidade, robustez e princípios de funcionamento.
+- **Projetos e fabricação** de equipamentos para tratamento e filtragem de particulados e gases
+- **Suporte técnico** e consultoria aplicada a processos industriais
+- **Compromisso** com sustentabilidade e conformidade regulatória
+- **Soluções integradas** que transformam desafios ambientais em oportunidades de inovação
 
-## Sustentabilidade
-Integramos boas práticas ambientais aos projetos, buscando menor impacto e eficiência energética.
+## 🔧 Produtos e Tecnologias
 
-## Como acessar
-- Site publicado a partir deste repositório (GitHub Pages). Após habilitar em `Settings` → `Pages` com Source `Deploy from a branch`, branch `main` e pasta `/root`, a página fica disponível poucos minutos depois.
+- **Filtro Ciclônico FIP-MDF** — Separação eficiente de particulados
+- **Lavador de Gases Modular** — Neutralização de gases tóxicos
+- **Filtro de Carvão Ativado Industrial** — Remoção final de VOCs e fenóis
 
-## Contato
-Utilize a seção “Contato” no site para iniciar a conversa com nossa equipe.
+## 🎨 Funcionalidades do Site
 
-## Estrutura do site
-- `index.html` — página principal
-- `index.css` — estilos
-- `imgs/produto/` — imagens de produtos e renderizações
-- `imgs/socios/` — fotos da equipe
+### ✅ Implementações Recentes
 
-## Equipe
-- Alice Vasques Rodrigues — Sócia
-- Hiury de Oliveira Lima — Sócio
-- Jessica Martins Lino — Sócia
-- Maria Eduarda Rocha Teixeira — Sócia
+- **Layout responsivo** com design moderno e acessível
+- **Galeria de projetos** com renderizações em alta qualidade
+- **Seção "Sobre Nós"** com logo centralizado e informações da equipe
+- **Formulário de contato direto** integrado com EmailJS para envio de emails
+- **Otimizações visuais** com logo redimensionado e centralizado
+- **Estrutura semântica** com meta tags para SEO e redes sociais
 
-## Direitos e uso
+### 📧 Sistema de Contato
+
+O formulário de contato utiliza **EmailJS** para envio direto de emails, eliminando a necessidade de abrir aplicações externas. Para ativar:
+
+1. Configure as credenciais EmailJS em `index.html`:
+   - `SERVICE_ID` — ID do serviço EmailJS
+   - `TEMPLATE_ID` — ID do template de email
+   - `PUBLIC_KEY` — Chave pública da conta
+
+2. O sistema inclui feedback visual para o usuário durante o envio
+
+## 📁 Estrutura do Projeto
+
+```
+FIP-MDF/
+├── index.html          # Página principal com estrutura semântica
+├── index.css           # Estilos responsivos e variáveis CSS
+├── imgs/
+│   ├── produto/        # Imagens de produtos e logo
+│   │   ├── logo.png    # Logotipo oficial da FIP-MDF
+│   │   └── [renderizações dos equipamentos]
+│   └── socios/         # Fotos da equipe fundadora
+│       ├── equipe.svg  # Imagem SVG da equipe (não utilizada)
+│       └── [fotos individuais dos sócios]
+└── README.md           # Este arquivo
+```
+
+## 🌐 Como Acessar
+
+**Site publicado:** [https://pedroscfa.github.io/FIPMDF/](https://pedroscfa.github.io/FIPMDF/)
+
+O site é automaticamente publicado via **GitHub Pages** a partir da branch `main`. Qualquer commit na branch principal atualiza o site em poucos minutos.
+
+### Configuração do GitHub Pages
+1. Acesse `Settings` → `Pages` no repositório
+2. Source: `Deploy from a branch`
+3. Branch: `main`
+4. Pasta: `/root`
+
+## 👥 Equipe Fundadora
+
+- **Alice Vasques Rodrigues** — Diretora de Inovação
+- **Hiury de Oliveira Lima** — Diretor de Tecnologia  
+- **Jessica Martins Lino** — Diretora de Operações
+- **Maria Eduarda Rocha Teixeira** — Diretora de Sustentabilidade
+
+## 🔄 Histórico de Alterações
+
+### Versão Atual
+- ✅ Substituição da grade de fotos dos sócios por logo centralizado
+- ✅ Integração do EmailJS para envio direto de emails
+- ✅ Otimização do tamanho e centralização do logo
+- ✅ Melhoria na responsividade e acessibilidade
+- ✅ Adição de feedback visual no formulário de contato
+
+### Melhorias Técnicas
+- **CSS responsivo** com breakpoints otimizados
+- **Variáveis CSS** para consistência visual
+- **Lazy loading** nas imagens para performance
+- **Estrutura semântica** para SEO
+- **Acessibilidade** com skip links e ARIA labels
+
+## 📞 Contato
+
+- **E-mail:** Fipmdf.contato@gmail.com
+- **Instagram:** [@fipmdf](https://www.instagram.com/fipmdf/)
+- **Site:** [fipmdf.github.io](https://pedroscfa.github.io/FIPMDF/)
+
+## 📄 Direitos e Uso
+
 Conteúdo e imagens destinados à apresentação institucional da FIP-MDF. Todos os direitos reservados.
+
+---
+
+**FIP-MDF** — Transformando resíduos em recursos, inovação em sustentabilidade.
