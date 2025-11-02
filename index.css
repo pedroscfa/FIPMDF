@@ -24,6 +24,38 @@ body {
     background-color: var(--color-background);
 }
 
+/* Skip link (Acessibilidade) */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background: var(--color-secondary);
+    color: var(--color-text-light);
+    border-radius: 4px;
+    box-shadow: 0 2px 6px var(--color-shadow);
+    z-index: 2000;
+}
+
+/* Foco visível em elementos interativos */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
