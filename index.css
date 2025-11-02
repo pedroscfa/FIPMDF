@@ -62,6 +62,34 @@ select:focus-visible {
     padding: 0 20px;
 }
 
+/* Grade lateral de fundadores (Sobre Nós) */
+.founders-aside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    justify-items: center;
+    align-items: center;
+}
+
+.founders-aside img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+@media (max-width: 768px) {
+    .founders-aside {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        gap: 12px;
+    }
+    .founders-aside img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 /* Header e navegação */
 header {
     background-color: var(--color-text-light);
