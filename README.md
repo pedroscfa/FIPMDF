@@ -2,49 +2,44 @@
 Repositório do projeto **FIP-MDF**: solução integrada de filtragem, neutralização e reaproveitamento de subprodutos (pó de madeira, formaldeído, fenóis) na produção de MDF/MDP. O objetivo é reduzir emissões, proteger a saúde ocupacional e transformar resíduos em insumos econômicos.
 # FIP-MDF — Site Institucional
 
-Site estático em HTML/CSS para apresentação da FIP-MDF, incluindo seções de navegação, Sobre Nós, Produtos e Tecnologias, Galeria de Projetos, Sustentabilidade, Contato e Nossa Equipe.
+Este repositório apresenta o site institucional da FIP-MDF. O objetivo é comunicar quem somos, nossas soluções e como nos conectar. Não se trata de um projeto aberto a contribuições externas.
 
-## Visão Geral
-- Página única (`index.html`) com estilos em `index.css`.
-- Imagens organizadas nas pastas `imgs/produto/` e `imgs/socios/`.
-- Layout responsivo simples, focado em performance e clareza.
+## Sobre a FIP-MDF
+A FIP-MDF oferece soluções de engenharia para controle de emissões e tratamento de gases, com foco em eficiência operacional, segurança e responsabilidade ambiental.
 
-## Preview (GitHub Pages)
-- Após habilitar GitHub Pages em `Settings` → `Pages`:
-  - Source: `Deploy from a branch`
-  - Branch: `main` e pasta `/root`
-- A URL ficará disponível alguns minutos após a publicação.
+## O que entregamos
+- Projetos e fabricação de equipamentos para tratamento e filtragem de particulados e gases.
+- Suporte técnico e consultoria aplicada a processos industriais.
+- Compromisso com sustentabilidade e conformidade regulatória.
 
-## Estrutura de Pastas
+## Produtos e Tecnologias
+- Filtro Ciclônico FIP-MDF
+- Lavador de Gases Modular
+- Filtro de Carvão Ativado Industrial
+
+## Galeria de Projetos
+Imagens de renderização e seções técnicas dos principais equipamentos, destacando qualidade, robustez e princípios de funcionamento.
+
+## Sustentabilidade
+Integramos boas práticas ambientais aos projetos, buscando menor impacto e eficiência energética.
+
+## Como acessar
+- Site publicado a partir deste repositório (GitHub Pages). Após habilitar em `Settings` → `Pages` com Source `Deploy from a branch`, branch `main` e pasta `/root`, a página fica disponível poucos minutos depois.
+
+## Contato
+Utilize a seção “Contato” no site para iniciar a conversa com nossa equipe.
+
+## Estrutura do site
 - `index.html` — página principal
 - `index.css` — estilos
-- `imgs/produto/` — imagens de produtos e renderizações (cilindro, câmara, funil, seções)
+- `imgs/produto/` — imagens de produtos e renderizações
 - `imgs/socios/` — fotos da equipe
 
-## Como Rodar Localmente
-- Abra `index.html` diretamente no navegador (duplo clique ou via `Start-Process index.html` no PowerShell).
+## Equipe
+- Alice Vasques Rodrigues — Sócia
+- Hiury de Oliveira Lima — Sócio
+- Jessica Martins Lino — Sócia
+- Maria Eduarda Rocha Teixeira — Sócia
 
-## Publicação
-- Repositório: `https://github.com/pedroscfa/FIPMDF`
-- Branch principal: `main`
-- Para atualizar:
-  1. Faça alterações nos arquivos (`index.html`, `index.css`, imagens).
-  2. `git add . && git commit -m "Atualiza conteúdo" && git push`.
-
-## Seções Principais
-- Navegação com links âncora.
-- Sobre Nós com visão da empresa e equipe.
-- Produtos e Tecnologias com imagens e descrições.
-- Galeria de Projetos com renderizações em alta qualidade.
-- Sustentabilidade e Contato.
-- Nossa Equipe com fotos e cargos:
-  - Alice Vasques Rodrigues — Sócia
-  - Hiury de Oliveira Lima — Sócio
-  - Jessica Martins Lino — Sócia
-  - Maria Eduarda Rocha Teixeira — Sócia
-
-## Contribuição
-- Pull requests são bem-vindos para correções de conteúdo, melhorias de acessibilidade e otimizações de CSS.
-
-## Licença
-- A definir pelo mantenedor do repositório.
+## Direitos e uso
+Conteúdo e imagens destinados à apresentação institucional da FIP-MDF. Todos os direitos reservados.
