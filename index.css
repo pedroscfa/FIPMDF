@@ -420,6 +420,13 @@ section {
     background-color: #2980b9;
 }
 
+/* Status de envio do formulário */
+.contact-status {
+    min-height: 20px;
+    color: var(--color-secondary);
+    font-weight: 500;
+}
+
 /* Footer */
 footer {
     background-color: var(--color-text);

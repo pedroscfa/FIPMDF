@@ -14,6 +14,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- Open Graph / Twitter -->
     <meta property="og:title" content="FIP-MDF | Transformando resíduos em recursos">
@@ -89,11 +90,8 @@
                         <p>Somos uma empresa de tecnologia sustentável voltada para a indústria de MDF e MDP. Nosso foco é transformar resíduos e poluentes gerados na produção — como pó de madeira, formaldeído e compostos fenólicos — em insumos reutilizáveis e de alto valor econômico, reduzindo impactos ambientais e protegendo a saúde ocupacional.</p>
                     </div>
                     <div style="flex: 1; min-width: 300px; text-align: center;">
-                        <div class="founders-aside" aria-label="Fundadores da FIP-MDF">
-                            <img src="imgs/socios/Alice Vasques Rodrigues.jpg" alt="Alice Vasques Rodrigues" loading="lazy">
-                            <img src="imgs/socios/Hiury de Oliveira Lima.jpg" alt="Hiury de Oliveira Lima" loading="lazy">
-                            <img src="imgs/socios/Jessica Martins Lino.jpg" alt="Jessica Martins Lino" loading="lazy">
-                            <img src="imgs/socios/Maria Eduarda Rocha Teixeira.jpg" alt="Maria Eduarda Rocha Teixeira" loading="lazy">
+                        <div class="founders-aside" aria-label="Equipe FIP-MDF">
+                            <img src="imgs/socios/equipe.svg" alt="Equipe FIP-MDF" loading="lazy" style="max-width: 100%; height: auto; border-radius: 8px;">
                         </div>
                     </div>
                 </div>
@@ -314,7 +312,7 @@
             <div class="contact-content">
                 <div class="contact-form-container section-block is-visible">
                     <h3>Fale Conosco</h3>
-                    <form class="contact-form" action="mailto:Fipmdf.contato@gmail.com" method="post" enctype="text/plain">
+                    <form id="contact-form" class="contact-form" method="post">
                         <label for="name">Nome:</label>
                         <input type="text" id="name" name="name" required>
 
@@ -325,6 +323,7 @@
                         <textarea id="message" name="message" rows="5" required></textarea>
 
                         <button type="submit">Enviar Mensagem</button>
+                        <p id="contact-status" class="contact-status" aria-live="polite" style="margin-top:10px;"></p>
                     </form>
                 </div>
                 <div class="contact-info-container">
@@ -387,6 +386,41 @@
                 });
             });
         }
+
+        // Envio direto de e-mail via EmailJS
+        (function() {
+            const serviceId = 'SERVICE_ID'; // TODO: substituir
+            const templateId = 'TEMPLATE_ID'; // TODO: substituir
+            const publicKey = 'PUBLIC_KEY'; // TODO: substituir
+
+            const form = document.getElementById('contact-form');
+            const statusEl = document.getElementById('contact-status');
+
+            if (!form) return;
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                if (statusEl) statusEl.textContent = 'Enviando...';
+
+                try {
+                    if (window.emailjs) {
+                        window.emailjs.init(publicKey);
+                        await window.emailjs.send(serviceId, templateId, {
+                            name: form.name.value,
+                            email: form.email.value,
+                            message: form.message.value
+                        });
+                        if (statusEl) statusEl.textContent = 'Mensagem enviada com sucesso!';
+                        form.reset();
+                    } else {
+                        if (statusEl) statusEl.textContent = 'Serviço de envio não carregado. Tente novamente.';
+                    }
+                } catch (err) {
+                    console.error('Erro ao enviar:', err);
+                    if (statusEl) statusEl.textContent = 'Não foi possível enviar. Verifique os dados e tente novamente.';
+                }
+            });
+        })();
         
     </script>
 
