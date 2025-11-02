@@ -16,6 +16,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Tipografia fluida global (melhora em celulares, tablets e projetores) */
+html {
+    font-size: clamp(14px, 1.1vw, 18px);
+}
+
 /* Body */
 
 body {
@@ -318,7 +323,7 @@ section {
 
 .gallery-item img {
     width: 100%;
-    height: 300px; /* Altura fixa para o placeholder */
+    height: clamp(220px, 30vh, 360px); /* Altura responsiva para diferentes telas */
     display: block;
     transition: transform 0.3s ease;
     object-fit: cover;
@@ -492,6 +497,52 @@ footer {
     
     .product-list {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Ajustes específicos para celulares muito pequenos */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2em;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .gallery-item img {
+        height: 220px;
+    }
+}
+
+/* Modo projetor / telas muito grandes */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+
+    .section-title {
+        font-size: 3em;
+    }
+
+    .founders-aside img {
+        width: 480px;
+    }
+
+    .gallery-item img {
+        height: 420px;
     }
 }
 
