@@ -16,6 +16,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Body */
+
 body {
     line-height: 1.6;
     color: var(--color-text);
