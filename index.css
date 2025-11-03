@@ -225,14 +225,13 @@ section {
 }
 
 .product-card img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     border-radius: 4px;
     margin-bottom: 15px;
-    /* Placeholder para as imagens de produtos (3D) */
-    height: 200px;
-    background-color: #ddd;
-    object-fit: cover;
+    /* Mantém proporção constante dos cards sem cortes */
+    aspect-ratio: 16 / 9;
+    background-color: #fff;
+    object-fit: contain;
 }
 
 .process-flow {
@@ -319,15 +318,16 @@ section {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--color-shadow);
+    aspect-ratio: 16 / 9;
 }
 
 .gallery-item img {
     width: 100%;
-    height: clamp(220px, 30vh, 360px); /* Altura responsiva para diferentes telas */
+    height: 100%;
     display: block;
     transition: transform 0.3s ease;
-    object-fit: cover;
-    background-color: #ccc; /* Placeholder visual */
+    object-fit: contain;
+    background-color: #fff; /* Fundo neutro para barras quando necessário */
 }
 
 .gallery-item:hover img {
@@ -514,9 +514,6 @@ footer {
         font-size: 1.1em;
     }
 
-    .gallery-item img {
-        height: 220px;
-    }
 }
 
 /* Modo projetor / telas muito grandes */
