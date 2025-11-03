@@ -134,7 +134,10 @@ nav {
 
 /* Hero section */
 .hero {
-    background: linear-gradient(rgba(30, 132, 73, 0.8), rgba(52, 152, 219, 0.8)), url('/imgs/fundo-hero.png') no-repeat center center/cover;
+    background: 
+        linear-gradient(rgba(10, 93, 54, 0.65), rgba(52, 152, 219, 0.55)),
+        url('imgs/fundo-hero.svg') center/cover no-repeat;
+    background-blend-mode: soft-light, normal;
     color: var(--color-text-light);
     text-align: center;
     padding: 100px 20px;
@@ -154,11 +157,13 @@ nav {
 .hero h1 {
     font-size: 3em;
     margin-bottom: 10px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
 .hero p {
     font-size: 1.5em;
     font-weight: 300;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
 
 /* Seções gerais */
