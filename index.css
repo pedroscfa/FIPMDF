@@ -166,6 +166,15 @@ nav {
     text-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
 
+.hero-description {
+    font-size: 1.1em;
+    margin-top: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+}
+
 /* Seções gerais */
 section {
     padding: 80px 0;
@@ -195,6 +204,32 @@ section {
 }
 
 /* Sobre Nós */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.about-image .founders-aside img {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px var(--color-shadow);
+}
+
 .missao-valores {
     display: flex;
     gap: 20px;
@@ -309,6 +344,51 @@ section {
     width: 100px;
     height: 100px;
     fill: var(--color-primary);
+}
+
+.sustainability-subtitle {
+    margin-top: 20px;
+    color: var(--color-primary);
+}
+
+.benefits-list,
+.target-list,
+.value-list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.value-list {
+    margin-bottom: 0;
+}
+
+.subproducts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.table-header {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table-header th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.table-row td {
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table-row:last-child td {
+    border-bottom: none;
+}
+
+.effluent-note {
+    margin-top: 15px;
 }
 
 /* Galeria / Projetos */

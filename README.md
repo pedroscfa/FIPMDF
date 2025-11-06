@@ -24,11 +24,14 @@ A FIP-MDF nasceu da união de cinco visionários — Alice, Jéssica, Maria Edua
 ### ✅ Implementações Recentes
 
 - **Layout responsivo** com design moderno e acessível
-- **Galeria de projetos** com renderizações em alta qualidade
+- **Galeria de projetos interativa** com modal de visualização e zoom
+- **Sistema de modal com zoom** para explorar detalhes das imagens
 - **Seção "Sobre Nós"** com logo centralizado e informações da equipe
 - **Formulário de contato direto** integrado com EmailJS para envio de emails
 - **Otimizações visuais** com logo redimensionado e centralizado
 - **Estrutura semântica** com meta tags para SEO e redes sociais
+- **Separação de estilos CSS** por competência (socios.css, galeria.css)
+- **Ajuste de consistência visual** das imagens da equipe
 
 ### 📧 Sistema de Contato
 
@@ -41,18 +44,28 @@ O formulário de contato utiliza **EmailJS** para envio direto de emails, elimin
 
 2. O sistema inclui feedback visual para o usuário durante o envio
 
+### 🖼️ Galeria Interativa
+
+- **Modal de visualização**: Clique em qualquer imagem para abrir em tela cheia
+- **Controles de zoom**: Botões de aumentar/diminuir zoom, reset e scroll do mouse
+- **Navegação intuitiva**: Arraste a imagem quando com zoom aplicado
+- **Responsividade total**: Funciona perfeitamente em dispositivos móveis
+- **Efeitos visuais**: Hover com brilho e indicador de zoom
+
 ## 📁 Estrutura do Projeto
 
 ```
 FIP-MDF/
 ├── index.html          # Página principal com estrutura semântica
 ├── index.css           # Estilos responsivos e variáveis CSS
+├── socios.css          # Estilos específicos da seção de sócios
+├── galeria.css         # Estilos da galeria e modal de imagens
 ├── imgs/
 │   ├── produto/        # Imagens de produtos e logo
 │   │   ├── logo.png    # Logotipo oficial da FIP-MDF
 │   │   └── [renderizações dos equipamentos]
 │   └── socios/         # Fotos da equipe fundadora
-│       ├── equipe.svg  # Imagem SVG da equipe (não utilizada)
+│       ├── equipe.svg  # Imagem SVG da equipe
 │       └── [fotos individuais dos sócios]
 └── README.md           # Este arquivo
 ```
@@ -75,10 +88,19 @@ O site é automaticamente publicado via **GitHub Pages** a partir da branch `mai
 - **Hiury de Oliveira Lima** — Diretor de Tecnologia  
 - **Jessica Martins Lino** — Diretora de Operações
 - **Maria Eduarda Rocha Teixeira** — Diretora de Sustentabilidade
+- **Gabriel Ferreira Lopes** — Coordenador de Projetos
 
 ## 🔄 Histórico de Alterações
 
-### Versão Atual
+### Versão Atual (v2.0)
+- ✅ **Modal de imagens interativo** com sistema de zoom e navegação
+- ✅ **Separação de estilos CSS** em arquivos por competência
+- ✅ **Ajuste de consistência** no tamanho das imagens da equipe
+- ✅ **Remoção de estilos inline** e organização em classes CSS
+- ✅ **Otimização de performance** com lazy loading e animações suaves
+- ✅ **Melhorias de acessibilidade** e responsividade
+
+### Versão Anterior (v1.0)
 - ✅ Substituição da grade de fotos dos sócios por logo centralizado
 - ✅ Integração do EmailJS para envio direto de emails
 - ✅ Otimização do tamanho e centralização do logo
@@ -91,6 +113,7 @@ O site é automaticamente publicado via **GitHub Pages** a partir da branch `mai
 - **Lazy loading** nas imagens para performance
 - **Estrutura semântica** para SEO
 - **Acessibilidade** com skip links e ARIA labels
+- **JavaScript modular** para funcionalidades interativas
 
 ## 📞 Contato
 

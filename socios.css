@@ -1,0 +1,73 @@
+/* Estilos para a seção de sócios e equipe */
+
+/* Container da equipe */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+/* Card individual de cada sócio */
+.team-member {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    text-align: center;
+}
+
+/* Imagens dos sócios */
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Ajuste específico para a imagem do Gabriel Ferreira Lopes */
+.team-member img[alt="Gabriel Ferreira Lopes"] {
+    object-fit: cover;
+    object-position: center;
+    /* Garante que a imagem tenha as mesmas proporções que as outras */
+    aspect-ratio: 1/1;
+}
+
+/* Títulos e descrições dos sócios */
+.team-member h4 {
+    margin: 10px 0 5px 0;
+    color: var(--color-primary);
+    font-size: 1.1em;
+}
+
+.team-member p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: 0.9em;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .team-members {
+        gap: 15px;
+    }
+    
+    .team-member {
+        min-width: 150px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-member {
+        min-width: 200px;
+        max-width: 250px;
+    }
+}

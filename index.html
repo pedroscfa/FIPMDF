@@ -14,6 +14,8 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="socios.css">
+    <link rel="stylesheet" href="galeria.css">
     <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- Open Graph / Twitter -->
@@ -54,7 +56,7 @@
         <div class="container">
             <nav aria-label="Navegação principal">
                 <div class="logo">
-                    <img src="imgs/produto/logo.png" alt="Logotipo FIP-MDF" style="height: 40px; width: auto;" loading="lazy">
+                    <img src="imgs/produto/logo.png" alt="Logotipo FIP-MDF" loading="lazy">
                     FIP-MDF
                 </div>
                 <div class="nav-links">
@@ -74,7 +76,7 @@
             <div class="hero-content">
                 <h1>Filtros Industriais de Pó MDF</h1>
                 <p>Transformando resíduos em recursos</p>
-                <p style="font-size: 1.1em; margin-top: 20px; max-width: 700px; margin-left: auto; margin-right: auto; font-weight: 400;">
+                <p class="hero-description">
                     Desenvolvemos soluções inovadoras em filtros industriais para a limpeza e purificação do pó e gases gerados na fabricação de MDF e MDP, mitigando riscos ambientais e de saúde ocupacional.
                 </p>
             </div>
@@ -83,41 +85,46 @@
         <section id="about" class="container">
             <h2 class="section-title">Sobre Nós</h2>
             <div class="section-block">
-                <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; margin-bottom: 30px;">
-                    <div style="flex: 1; min-width: 300px;">
+                <div class="about-content">
+                    <div class="about-text">
                         <h3>Nossa História</h3>
                         <p>A FIP-MDF nasceu da união de cinco visionários — Alice, Jéssica, Maria Eduarda, Gabriel e Hiury — com a missão de inovar no setor de engenharia e sustentabilidade industrial. Observamos os desafios ambientais e de saúde ocupacional na produção de MDF/MDP, como a liberação de Formaldeído e Compostos Fenólicos tóxicos, e decidimos transformá-los em oportunidades de inovação.</p>
                         <p>Somos uma empresa de tecnologia sustentável voltada para a indústria de MDF e MDP. Nosso foco é transformar resíduos e poluentes gerados na produção — como pó de madeira, formaldeído e compostos fenólicos — em insumos reutilizáveis e de alto valor econômico, reduzindo impactos ambientais e protegendo a saúde ocupacional.</p>
                     </div>
-                    <div style="flex: 1; min-width: 300px; text-align: center;">
+                    <div class="about-image">
                         <div class="founders-aside" aria-label="Logotipo da FIP-MDF">
-                            <img src="imgs/produto/logo.png" alt="Logotipo FIP-MDF" loading="lazy" style="height: auto; display: block; margin: 0 auto; box-shadow: 0 4px 8px var(--color-shadow);">
+                            <img src="imgs/produto/logo.png" alt="Logotipo FIP-MDF" loading="lazy">
                         </div>
                     </div>
                 </div>
                 
                 <div style="margin-bottom: 30px;">
                     <h3>Nossa Equipe</h3>
-                    <div class="team-members" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 30px 0;">
-                        <div class="team-member" style="flex: 1; min-width: 200px; max-width: 250px; text-align: center;">
-                            <img src="imgs/socios/Alice Vasques Rodrigues.jpg" alt="Alice Vasques Rodrigues" style="width: 100%; border-radius: 50%; margin-bottom: 10px;">
+                    <div class="team-members">
+                        <div class="team-member">
+                            <img src="imgs/socios/Alice Vasques Rodrigues.jpg" alt="Alice Vasques Rodrigues">
                             <h4>Alice Vasques Rodrigues</h4>
-                            <p>Diretora de Inovação</p>
+                            <p>Gestora Administrativa e Operacional</p>
                         </div>
-                        <div class="team-member" style="flex: 1; min-width: 200px; max-width: 250px; text-align: center;">
-                            <img src="imgs/socios/Hiury de Oliveira Lima.jpg" alt="Hiury de Oliveira Lima" style="width: 100%; border-radius: 50%; margin-bottom: 10px;">
+                        <div class="team-member">
+                            <img src="imgs/socios/Hiury de Oliveira Lima.jpg" alt="Hiury de Oliveira Lima">
                             <h4>Hiury de Oliveira Lima</h4>
-                            <p>Diretor de Tecnologia</p>
+                            <p>CEO</p>
                         </div>
-                        <div class="team-member" style="flex: 1; min-width: 200px; max-width: 250px; text-align: center;">
-                            <img src="imgs/socios/Jessica Martins Lino.jpg" alt="Jessica Martins Lino" style="width: 100%; border-radius: 50%; margin-bottom: 10px;">
+                        <div class="team-member">
+                            <img src="imgs/socios/Jessica Martins Lino.jpg" alt="Jessica Martins Lino">
                             <h4>Jessica Martins Lino</h4>
-                            <p>Diretora de Operações</p>
+                            <p>Gestora de Comunicação e Estratégia</p>
                         </div>
-                        <div class="team-member" style="flex: 1; min-width: 200px; max-width: 250px; text-align: center;">
-                            <img src="imgs/socios/Maria Eduarda Rocha Teixeira.jpg" alt="Maria Eduarda Rocha Teixeira" style="width: 100%; border-radius: 50%; margin-bottom: 10px;">
+                        <div class="team-member">
+                            <img src="imgs/socios/Maria Eduarda Rocha Teixeira.jpg" alt="Maria Eduarda Rocha Teixeira">
                             <h4>Maria Eduarda Rocha Teixeira</h4>
-                            <p>Diretora de Sustentabilidade</p>
+                            <p>Gestora de Soluções Químicas</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="imgs/socios/Gabriel Ferreira Lopes.png" alt="Gabriel Ferreira Lopes">
+                            <h4>Gabriel Ferreira Lopes</h4>
+                            <p>CFO</p>
                         </div>
                     </div>
                 
@@ -197,30 +204,30 @@
                     
                     <div class="effluent-treatment">
                         <h4>Reaproveitamento dos Subprodutos</h4>
-                        <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
-                            <tr style="background-color: rgba(255,255,255,0.1);">
-                                <th style="padding: 8px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.3);">Resíduo recuperado</th>
-                                <th style="padding: 8px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.3);">Reuso industrial</th>
+                        <table class="subproducts-table">
+                            <tr class="table-header">
+                                <th>Resíduo recuperado</th>
+                                <th>Reuso industrial</th>
                             </tr>
-                            <tr>
-                                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Pó de madeira</strong></td>
-                                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Painéis, briquetes, combustível, substrato agrícola</td>
+                            <tr class="table-row">
+                                <td><strong>Pó de madeira</strong></td>
+                                <td>Painéis, briquetes, combustível, substrato agrícola</td>
                             </tr>
-                            <tr>
-                                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Formaldeído</strong></td>
-                                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Reprocessamento de resinas e produtos químicos</td>
+                            <tr class="table-row">
+                                <td><strong>Formaldeído</strong></td>
+                                <td>Reprocessamento de resinas e produtos químicos</td>
                             </tr>
-                            <tr>
-                                <td style="padding: 8px;"><strong>Fenóis</strong></td>
-                                <td style="padding: 8px;">Resinas fenólicas, farmacêuticos, agroquímicos</td>
+                            <tr class="table-row">
+                                <td><strong>Fenóis</strong></td>
+                                <td>Resinas fenólicas, farmacêuticos, agroquímicos</td>
                             </tr>
                         </table>
-                        <p style="margin-top: 15px;">O efluente líquido gerado pelo lavador de gases, com caráter ácido (devido ao Formaldeído e Fenóis), pode ser neutralizado com solução de cal hidratada para garantir a conformidade ambiental antes do descarte ou reaproveitamento.</p>
+                        <p class="effluent-note">O efluente líquido gerado pelo lavador de gases, com caráter ácido (devido ao Formaldeído e Fenóis), pode ser neutralizado com solução de cal hidratada para garantir a conformidade ambiental antes do descarte ou reaproveitamento.</p>
                     </div>
 
                 </div>
 
-                <div class="product-list" style="margin-top: 60px;">
+                <div class="product-list">
                     <div class="product-card">
                         <img src="imgs/produto/cilindro.png" alt="Filtro Ciclônico FIP-MDF" loading="lazy">
                         <h4>Filtro Ciclônico de Alta Eficiência</h4>
@@ -248,8 +255,8 @@
                     <h3>Reaproveitamento: Transformando Resíduos em Recursos</h3>
                     <p>Nosso lema, "Transformando resíduos em recursos", é a espinha dorsal da FIP-MDF. Através do nosso sistema de controle e recuperação, o pó de madeira, formaldeído e fenóis capturados podem ser reintroduzidos no processo produtivo da indústria.</p>
                     
-                    <h4 style="margin-top: 20px; color: var(--color-primary);">Benefícios Técnicos e Econômicos</h4>
-                    <ul style="margin-left: 20px; margin-bottom: 20px;">
+                    <h4 class="sustainability-subtitle">Benefícios Técnicos e Econômicos</h4>
+                    <ul class="benefits-list">
                         <li><strong>Até 20%</strong> de aumento da vida útil dos equipamentos</li>
                         <li><strong>15–20%</strong> de redução de custos operacionais</li>
                         <li>Redução drástica de resíduos e emissões atmosféricas</li>
@@ -257,8 +264,8 @@
                         <li>Receita adicional com venda/reuso dos subprodutos</li>
                     </ul>
                     
-                    <h4 style="margin-top: 20px; color: var(--color-primary);">Público-Alvo</h4>
-                    <ul style="margin-left: 20px; margin-bottom: 20px;">
+                    <h4 class="sustainability-subtitle">Público-Alvo</h4>
+                    <ul class="target-list">
                         <li>Indústrias de MDF/MDP</li>
                         <li>Indústria moveleira</li>
                         <li>Marcenarias</li>
@@ -266,9 +273,9 @@
                         <li>Consultores e auditores ambientais</li>
                     </ul>
                     
-                    <h4 style="margin-top: 20px; color: var(--color-primary);">Proposta de Valor</h4>
+                    <h4 class="sustainability-subtitle">Proposta de Valor</h4>
                     <p>A FIP-MDF une tecnologia, sustentabilidade e rentabilidade:</p>
-                    <ul style="margin-left: 20px;">
+                    <ul class="value-list">
                         <li><strong>Segurança Ocupacional:</strong> Redução da exposição dos trabalhadores a VOCs cancerígenos e poeira fina</li>
                         <li><strong>Conformidade Proativa:</strong> Antecipação e atendimento rigoroso às normas e legislações ambientais</li>
                         <li><strong>Vantagem Competitiva:</strong> Fortalecimento da imagem como líder em sustentabilidade, abrindo portas para novos mercados e parcerias globais</li>
@@ -298,7 +305,6 @@
                 <div class="gallery-item">
                     <img src="imgs/produto/funil seccao.png" alt="Renderização em alta qualidade de Filtro de Carvão Ativado Industrial" loading="lazy">
                     <div class="gallery-caption">Filtro de Adsorção: Remoção Final de VOCs e Fenóis</div>
-                    
                 </div>
                 <div class="gallery-item">
                     <img src="imgs/produto/camara seccao transversal.png" alt="Renderização em alta qualidade de Câmara Seccional Transversal" loading="lazy">
@@ -348,6 +354,19 @@
             <p>&copy; 2025 FIP-MDF - Todos os direitos reservados. | Desenvolvido com Sustentabilidade e Tecnologia.</p>
         </div>
     </footer>
+
+    <!-- Modal para visualização de imagens -->
+    <div id="image-modal" class="image-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-image" class="modal-image" src="" alt="">
+            <div class="modal-controls">
+                <button id="zoom-in" class="zoom-btn">🔍+</button>
+                <button id="zoom-out" class="zoom-btn">🔍-</button>
+                <button id="zoom-reset" class="zoom-btn">Reset</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         // JavaScript para o efeito de scroll-reveal (fade-in) e responsividade (menu mobile)
@@ -420,6 +439,130 @@
                     if (statusEl) statusEl.textContent = 'Não foi possível enviar. Verifique os dados e tente novamente.';
                 }
             });
+        })();
+        
+        // Funcionalidade do Modal de Imagens com Zoom
+        (function() {
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById('modal-image');
+            const closeBtn = document.querySelector('.modal-close');
+            const zoomInBtn = document.getElementById('zoom-in');
+            const zoomOutBtn = document.getElementById('zoom-out');
+            const zoomResetBtn = document.getElementById('zoom-reset');
+            
+            let currentScale = 1;
+            let isDragging = false;
+            let startX, startY, translateX = 0, translateY = 0;
+            
+            // Abrir modal ao clicar nas imagens da galeria
+            document.querySelectorAll('.gallery-item img').forEach(img => {
+                img.addEventListener('click', function() {
+                    modal.classList.add('show');
+                    modalImg.src = this.src;
+                    modalImg.alt = this.alt;
+                    resetZoom();
+                });
+            });
+            
+            // Fechar modal
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // Fechar com ESC
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('show')) {
+                    closeModal();
+                }
+            });
+            
+            // Funções de zoom
+            zoomInBtn.addEventListener('click', function() {
+                currentScale = Math.min(currentScale * 1.25, 4);
+                updateTransform();
+            });
+            
+            zoomOutBtn.addEventListener('click', function() {
+                currentScale = Math.max(currentScale / 1.25, 0.25);
+                updateTransform();
+            });
+            
+            zoomResetBtn.addEventListener('click', resetZoom);
+            
+            // Função para resetar zoom
+            function resetZoom() {
+                currentScale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            }
+            
+            // Atualizar transformação
+            function updateTransform() {
+                modalImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentScale})`;
+            }
+            
+            // Função para fechar modal
+            function closeModal() {
+                modal.classList.remove('show');
+                resetZoom();
+            }
+            
+            // Funcionalidade de arrastar a imagem
+            modalImg.addEventListener('mousedown', startDrag);
+            modalImg.addEventListener('touchstart', startDrag, { passive: false });
+            
+            document.addEventListener('mousemove', drag);
+            document.addEventListener('touchmove', drag, { passive: false });
+            
+            document.addEventListener('mouseup', endDrag);
+            document.addEventListener('touchend', endDrag);
+            
+            function startDrag(e) {
+                if (currentScale > 1) {
+                    isDragging = true;
+                    modalImg.style.cursor = 'grabbing';
+                    
+                    const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+                    const clientY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+                    
+                    startX = clientX - translateX;
+                    startY = clientY - translateY;
+                    
+                    e.preventDefault();
+                }
+            }
+            
+            function drag(e) {
+                if (!isDragging) return;
+                
+                const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+                const clientY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+                
+                translateX = clientX - startX;
+                translateY = clientY - startY;
+                
+                updateTransform();
+                e.preventDefault();
+            }
+            
+            function endDrag() {
+                isDragging = false;
+                modalImg.style.cursor = 'grab';
+            }
+            
+            // Zoom com scroll do mouse
+            modalImg.addEventListener('wheel', function(e) {
+                e.preventDefault();
+                
+                const delta = e.deltaY > 0 ? 0.9 : 1.1;
+                currentScale = Math.max(0.25, Math.min(4, currentScale * delta));
+                updateTransform();
+            });
+            
         })();
         
     </script>
