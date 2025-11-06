@@ -454,8 +454,36 @@
             let isDragging = false;
             let startX, startY, translateX = 0, translateY = 0;
             
-            // Abrir modal ao clicar nas imagens da galeria
+            // Tratamento de erro de carregamento de imagens
+            function handleImageError(img) {
+                img.classList.add('error');
+                img.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik0xMDAgMTAwTDEyMCA4MEwxNDAgMTAwTDEyMCAxMjBMMTAwIDEwMFoiIGZpbGw9IiNDQ0MiLz4KPHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik0xMDAgMTAwTDEyMCA4MEwxNDAgMTAwTDEyMCAxMjBMMTAwIDEwMFoiIGZpbGw9IiNDQ0MiLz4KPC9zdmc+';
+            }
+            
+            // Gerenciamento de loading state
+            function handleImageLoad(img) {
+                img.classList.remove('loading');
+                img.classList.add('loaded');
+            }
+            
+            // Adicionar event listeners para todas as imagens da galeria
             document.querySelectorAll('.gallery-item img').forEach(img => {
+                // Adicionar classe de loading inicialmente
+                img.classList.add('loading');
+                
+                img.addEventListener('error', function() {
+                    handleImageError(this);
+                });
+                
+                img.addEventListener('load', function() {
+                    handleImageLoad(this);
+                });
+                
+                // Se a imagem já estiver carregada (do cache)
+                if (img.complete && img.naturalHeight !== 0) {
+                    handleImageLoad(img);
+                }
+                
                 img.addEventListener('click', function() {
                     modal.classList.add('show');
                     modalImg.src = this.src;
