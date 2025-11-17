@@ -12,7 +12,7 @@
 /* Card individual de cada sócio */
 .team-member {
     flex: 1;
-    min-width: 200px;
+    min-width: 20px;
     max-width: 250px;
     text-align: center;
 }
@@ -32,6 +32,14 @@
     object-fit: cover;
     object-position: center;
     /* Garante que a imagem tenha as mesmas proporções que as outras */
+    aspect-ratio: 1/1;
+}
+
+/* Ajuste específico para a imagem do Pedro Ernesto Silva da Cunha */
+.team-member img[alt="Pedro Ernesto Silva da Cunha"] {
+    object-fit: cover;
+    /* Alinha o enquadramento ao topo para evitar cortar a cabeça */
+    object-position: top center;
     aspect-ratio: 1/1;
 }
 
